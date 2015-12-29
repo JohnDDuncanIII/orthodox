@@ -54,12 +54,11 @@
 }
 
 .selectForOfflineUseButton {
-  list-style-image: url("chrome://communicator/skin/icons/offline.gif");
+  list-style-image: url("chrome://communicator/skin/icons/offline.png");
 }
 
 .selectForOfflineUseButton > .button-box > .button-icon {
-  -moz-margin-start: 4px;
-  -moz-margin-end: 4px;
+  margin: 0 4px;
 }
 
 .signatureBox {
@@ -70,6 +69,10 @@ treechildren::-moz-tree-cell-text(isDefaultServer-true) {
   font-weight: bold;
 }
 
+#accountActionsDropdown {
+  min-width: 30ch;
+}
+
 /* ::::: SMTP Server Panel :::::: */
 
 .smtpServerListItem {
@@ -77,9 +80,11 @@ treechildren::-moz-tree-cell-text(isDefaultServer-true) {
 }
 
 #backgroundBox {
-  background-color: ThreeDLightShadow;
+  background-color: #FFFFFF;
+  opacity: 0.5;
 }
 
 #smtpServerInfoBox textbox {
   background-color: transparent;
 }
+

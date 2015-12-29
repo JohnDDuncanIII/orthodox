@@ -5,26 +5,27 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{04c0ff32-fd79-4cee-9d10-b056b518da23}</em:id>
-    <em:version>0.1.1</em:version>
+    <em:version>0.1.2</em:version>
     <em:unpack>true</em:unpack>
 
     <!-- SeaMonkey -->
     <em:targetApplication>
-      <Description>>
+      <Description>
         <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
         <em:minVersion>2.0</em:minVersion>
-        <em:maxVersion>2.20</em:maxVersion>
+        <em:maxVersion>2.39</em:maxVersion>
       </Description>
     </em:targetApplication>
 
     <!-- Front End MetaData -->
     <em:name>Orthodox for SeaMonkey</em:name>
-    <em:description>Mozilla 1 / Netscape 4 classic theme</em:description>
+    <em:description>Mozilla Suite / Netscape 4 theme</em:description>
 
     <!-- Front End Integration Hooks (used by Theme Manager)-->
     <em:creator>Nick Kriukov</em:creator>
     <em:contributor>stormcrash</em:contributor>
     <em:contributor>Exalm</em:contributor>
+    <em:contributor>John Duncan</em:contributor>
 
 
     <em:internalName>Orthodox</em:internalName>

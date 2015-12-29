@@ -20,11 +20,10 @@
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
- *   Manuel Reimer (Manuel.Reimer@gmx.de)
  *
  * Alternatively, the contents of this file may be used under the terms of
- * either of the GNU General Public License Version 2 or later (the "GPL"),
- * or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
  * in which case the provisions of the GPL or the LGPL are applicable instead
  * of those above. If you wish to allow use of your version of this file only
  * under the terms of either the GPL or the LGPL, and not to allow others to
@@ -69,7 +68,6 @@ separator.thin {
 }
 
 .acctCentralRow {
-  -moz-binding: url("chrome://communicator/skin/communicatorBindings.xml#row-iconic");
   -moz-margin-start: 10px;
   font-size: 125%;
   color: #000000;
@@ -81,10 +79,11 @@ separator.thin {
 }
 
 .acctCentralRowTitleBox {
-  background-color: -moz-dialog;
+  background-color: -moz-Dialog;
+  -moz-appearance: toolbox;
   font-size: 150%;
   font-weight: bold;
-  color: -moz-fieldtext;
+  color: #000000;
 }
 
 /* ::::: links ::::: */
@@ -92,7 +91,6 @@ separator.thin {
 .acctCentralLinkText {
   cursor: pointer;
   color: #212731;
-  text-decoration: underline;
 }
 
 .acctCentralLinkText:hover {
@@ -103,52 +101,112 @@ separator.thin {
   color: #000000;
 }
 
-/* ::::: row icons ::::: */
-
-#ReadMessages {
-  list-style-image: url("chrome://messenger/skin/icons/acct-read.png");
+#ReadMessages label {
+  background: url("chrome://messenger/skin/accountcentral/read-messages.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-#ComposeMessage {
-  list-style-image: url("chrome://messenger/skin/icons/acct-compose.png");
+#ReadMessages label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/read-messages.png") right no-repeat !important;
 }
 
-#SubscribeNewsgroups {
-  list-style-image: url("chrome://messenger/skin/icons/acct-subscribe.png");
+#ComposeMessage label {
+  background: url("chrome://messenger/skin/accountcentral/write-message.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-#SubscribeImapFolders {
-  list-style-image: url("chrome://messenger/skin/icons/acct-subscribe.png");
+#ComposeMessage label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/write-message.png") right no-repeat !important;
 }
 
-#SubscribeRSS {
-  list-style-image: url("chrome://messenger/skin/icons/acct-subscribe.png");
+#AccountSettings label {
+  background: url("chrome://messenger/skin/accountcentral/account-settings.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-#SearchMessages {
-  list-style-image: url("chrome://messenger/skin/icons/acct-search.png");
+#AccountSettings label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/account-settings.png") right no-repeat !important;
 }
 
-#AccountSettings {
-  list-style-image: url("chrome://messenger/skin/icons/acct-prefs.png");
+#CreateAccount label {
+  background: url("chrome://messenger/skin/accountcentral/create-account.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-#CreateAccount {
-  list-style-image: url("chrome://messenger/skin/icons/acct-newaccount.png");
+#CreateAccount label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/create-account.png") right no-repeat !important;
 }
 
-#CreateFilters {
-  list-style-image: url("chrome://messenger/skin/icons/acct-filters.png");
+#SearchMessages label {
+  background: url("chrome://messenger/skin/accountcentral/search-messages.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-#OfflineSettings {
-  list-style-image: url("chrome://messenger/skin/icons/acct-prefs.png");
+#SearchMessages label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/search-messages.png") right no-repeat !important;
 }
 
-#JunkSettingsMail {
-  list-style-image: url("chrome://messenger/skin/icons/acct-filters.png");
+#CreateFilters label {
+  background: url("chrome://messenger/skin/accountcentral/manage-filters.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-#JunkSettingsNews {
-  list-style-image: url("chrome://messenger/skin/icons/acct-filters.png");
+#CreateFilters label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/manage-filters.png") right no-repeat !important;
+}
+
+#OfflineSettings label {
+  background: url("chrome://messenger/skin/accountcentral/offline-settings.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#OfflineSettings label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/offline-settings.png") right no-repeat !important;
+}
+
+#SubscribeImapFolders label {
+  background: url("chrome://messenger/skin/accountcentral/manage-imap.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#SubscribeImapFolders label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/manage-imap.png") right no-repeat !important;
+}
+
+#SubscribeNewsgroups label {
+  background: url("chrome://messenger/skin/accountcentral/manage-newsgroups.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#SubscribeNewsgroups label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/manage-newsgroups.png") right no-repeat !important;
+}
+
+#SubscribeRSS label {
+  background: url("chrome://messenger/skin/accountcentral/manage-rss.png")  no-repeat !important;
+  -moz-padding-start: 45px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#SubscribeRSS label[chromedir="rtl"] {
+  background: url("chrome://messenger/skin/accountcentral/manage-rss.png") right no-repeat !important;
 }
