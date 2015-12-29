@@ -1,0 +1,153 @@
+/* -*- Mode: C; c-basic-offset: 2 -*- */
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is mozilla.org code.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Ben Goodger <ben@netscape.com>
+ *   Josh Soref  <timeless@mac.com>
+ *   Dan Cannon  <dc2@myrealbox.com>
+ *   Manuel Reimer <Manuel.Reimer@gmx.de>
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either of the GNU General Public License Version 2 or later (the "GPL"),
+ * or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/**
+ * Style rules for generic bookmarks items.
+ */
+
+treechildren::-moz-tree-image(Name),
+treechildren::-moz-tree-image(title) {
+  -moz-margin-end: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.bookmark-item,
+treechildren::-moz-tree-image(Name),
+treechildren::-moz-tree-image(title) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-item.png");
+}
+
+.bookmark-item[container="true"],
+treechildren::-moz-tree-image(Name, container),
+treechildren::-moz-tree-image(title, container) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-closed.png");
+}
+
+.bookmark-item[open="true"],
+treechildren::-moz-tree-image(Name, open),
+treechildren::-moz-tree-image(title, open) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-open.png");
+}
+
+.bookmark-item[container="true"][open="true"][loading="true"] {
+  list-style-image: url("chrome://communicator/skin/icons/loading.gif") !important;
+}
+
+.bookmark-item > .toolbarbutton-box > .toolbarbutton-icon {
+  list-style-image: inherit;
+  width: 16px;
+  height: 16px;
+}
+
+/* calendar icon for history grouping items by day */
+treechildren::-moz-tree-image(Name, query, dayContainer) {
+  list-style-image: url("chrome://communicator/skin/history/calendar.png");
+}
+
+.bookmark-item[container][livemark],
+treechildren::-moz-tree-image(title, container, livemark) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/livemark-folder.png");
+  -moz-image-region: auto;
+}
+
+.bookmark-item[container][livemark] .bookmark-item,
+treechildren::-moz-tree-image(title, livemarkItem) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/livemark-item.png");
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_AllBookmarks) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/allBookmarks.png");
+  -moz-image-region: auto;
+}
+
+#bookmarksToolbarFolderMenu,
+#BMB_bookmarksToolbarFolderMenu,
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmarksToolbar.png");
+  -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmarksMenu.png");
+  -moz-image-region: auto;
+}
+
+#unsortedBookmarksFolderMenu,
+#BMB_unsortedBookmarksFolderMenu,
+treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/unsortedBookmarks.png");
+  -moz-image-region: auto;
+}
+
+/* query-nodes should be styled even if they're not expandable */
+.bookmark-item[container][query],
+treechildren::-moz-tree-image(title, query) {
+  list-style-image: url("chrome://communicator/skin/bookmarks/query.png");
+  -moz-image-region: auto;
+}
+
+.bookmark-item[query][tagContainer],
+treechildren::-moz-tree-image(title, query, tagContainer),
+treechildren::-moz-tree-image(query, OrganizerQuery_Tags) {
+  list-style-image: url("chrome://mozapps/skin/places/tagContainerIcon.png");
+  -moz-image-region: auto;
+}
+
+treechildren::-moz-tree-image(Name, separator),
+treechildren::-moz-tree-image(title, separator) {
+  list-style-image: none;
+  width: 0px;
+  height: 0px;
+}
+
+treechildren::-moz-tree-cell-text(Name, separator),
+treechildren::-moz-tree-cell-text(title, separator) {
+  color: ThreeDShadow;
+  margin: 0px 5px;
+}
+
+treechildren::-moz-tree-cell-text(Name, separator, selected, focus),
+treechildren::-moz-tree-cell-text(title, separator, selected, focus) {
+  color: HighlightText;
+}

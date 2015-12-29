@@ -1,0 +1,309 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-2001
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
+ *   Manuel Reimer (Manuel.Reimer@gmx.de)
+ *   Jens Hatlak (jh@junetz.de)
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either of the GNU General Public License Version 2 or later (the "GPL"),
+ * or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* ===== messengercompose.css ===========================================
+  == Styles for the main Messenger Compose window.
+  ======================================================================= */
+
+@import url("chrome://messenger/skin/");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: primary toolbar buttons ::::: */
+
+#button-send {
+  list-style-image: url("chrome://messenger/skin/icons/btn1.png");
+  -moz-image-region: rect(294px 23px 315px 0px);
+}
+
+#button-send:hover {
+  -moz-image-region: rect(294px 46px 315px 23px);
+}
+
+#button-send:hover:active {
+  -moz-image-region: rect(294px 69px 315px 46px);
+}
+
+#button-send[disabled="true"] {
+  -moz-image-region: rect(294px 92px 315px 69px) !important;
+}
+
+#button-address {
+  list-style-image: url("chrome://messenger/skin/icons/btn1.png");
+  -moz-image-region: rect(231px 23px 252px 0px);
+}
+
+#button-address:hover {
+  -moz-image-region: rect(231px 46px 252px 23px);
+}
+
+#button-address:hover:active {
+  -moz-image-region: rect(231px 69px 252px 46px);
+}
+
+#button-address[disabled="true"] {
+  -moz-image-region: rect(231px 92px 252px 69px) !important;
+}
+
+#button-attach {
+  list-style-image: url("chrome://messenger/skin/icons/btn1.png");
+  -moz-image-region: rect(252px 23px 273px 0px);
+}
+
+#button-attach:hover {
+  -moz-image-region: rect(252px 46px 273px 23px);
+}
+
+#button-attach:hover:active {
+  -moz-image-region: rect(252px 69px 273px 46px);
+}
+
+#button-attach[disabled="true"] {
+  -moz-image-region: rect(252px 92px 273px 69px) !important;
+}
+
+#spellingButton {
+  list-style-image: url("chrome://messenger/skin/icons/btn1.png");
+  -moz-image-region: rect(378px 23px 399px 0px);
+}
+
+#spellingButton:hover {
+  -moz-image-region: rect(378px 46px 399px 23px);
+}
+
+#spellingButton:hover:active {
+  -moz-image-region: rect(378px 69px 399px 46px);
+}
+
+#spellingButton[disabled="true"] {
+  -moz-image-region: rect(378px 92px 399px 69px) !important;
+}
+
+#button-save {
+  list-style-image: url("chrome://messenger/skin/icons/btn1.png");
+  -moz-image-region: rect(273px 23px 294px 0px);
+}
+
+#button-save:hover {
+  -moz-image-region: rect(273px 46px 294px 23px);
+}
+
+#button-save:hover:active {
+  -moz-image-region: rect(273px 69px 294px 46px);
+}
+
+#button-save[disabled="true"] {
+  -moz-image-region: rect(273px 92px 294px 69px) !important;
+}
+
+/* ::::: small primary toolbar buttons ::::: */
+
+toolbar[iconsize="small"] > #button-send,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-send {
+  list-style-image: url("chrome://messenger/skin/icons/messengericons-small.png");
+  -moz-image-region: rect(220px 19px 239px 0);
+}
+
+toolbar[iconsize="small"] > #button-send:hover {
+  -moz-image-region: rect(220px 39px 239px 20px);
+}
+
+toolbar[iconsize="small"] > #button-send:hover:active {
+  -moz-image-region: rect(220px 59px 239px 40px);
+}
+
+toolbar[iconsize="small"] > #button-send[disabled="true"] {
+  -moz-image-region: rect(220px 79px 239px 60px) !important;
+}
+
+toolbar[iconsize="small"] > #button-address,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-address {
+  list-style-image: url("chrome://messenger/skin/icons/messengericons-small.png");
+  -moz-image-region: rect(180px 19px 199px 0);
+}
+
+toolbar[iconsize="small"] > #button-address:hover {
+  -moz-image-region: rect(180px 39px 199px 20px);
+}
+
+toolbar[iconsize="small"] > #button-address:hover:active {
+  -moz-image-region: rect(180px 59px 199px 40px);
+}
+
+toolbar[iconsize="small"] > #button-address[disabled="true"] {
+  -moz-image-region: rect(180px 79px 199px 60px) !important;
+}
+
+toolbar[iconsize="small"] > #button-attach,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-attach {
+  list-style-image: url("chrome://messenger/skin/icons/messengericons-small.png");
+  -moz-image-region: rect(200px 19px 219px 0);
+}
+
+toolbar[iconsize="small"] > #button-attach:hover {
+  -moz-image-region: rect(200px 39px 219px 20px);
+}
+
+toolbar[iconsize="small"] > #button-attach:hover:active {
+  -moz-image-region: rect(200px 59px 219px 40px);
+}
+
+toolbar[iconsize="small"] > #button-attach[disabled="true"] {
+  -moz-image-region: rect(200px 79px 219px 60px) !important;
+}
+
+toolbar[iconsize="small"] > #spellingButton,
+toolbar[iconsize="small"] > toolbarpaletteitem > #spellingButton {
+  list-style-image: url("chrome://editor/skin/icons/editoricons-small.png");
+  -moz-image-region: rect(160px 19px 179px 0);
+}
+
+toolbar[iconsize="small"] > #spellingButton:hover {
+  -moz-image-region: rect(160px 39px 179px 20px);
+}
+
+toolbar[iconsize="small"] > #spellingButton:hover:active {
+  -moz-image-region: rect(160px 59px 179px 40px);
+}
+
+toolbar[iconsize="small"] > #spellingButton[disabled="true"] {
+  -moz-image-region: rect(160px 79px 179px 60px) !important;
+}
+
+toolbar[iconsize="small"] > #button-save,
+toolbar[iconsize="small"] > toolbarpaletteitem > #button-save {
+  list-style-image: url("chrome://editor/skin/icons/editoricons-small.png");
+  -moz-image-region: rect(140px 19px 159px 0);
+}
+
+toolbar[iconsize="small"] > #button-save:hover {
+  -moz-image-region: rect(140px 39px 159px 20px);
+}
+
+toolbar[iconsize="small"] > #button-save:hover:active {
+  -moz-image-region: rect(140px 59px 159px 40px);
+}
+
+toolbar[iconsize="small"] > #button-save[disabled="true"] {
+  -moz-image-region: rect(140px 79px 159px 60px) !important;
+}
+
+/* ::::: special toolbar colors ::::: */
+
+#content-frame {
+  border-left: 1px solid ThreeDDarkShadow;
+  border-right: 1px solid ThreeDLightShadow;
+}
+
+#appcontent {
+  border-left: 1px solid ThreeDShadow;
+  border-right: 1px solid ThreeDHighlight;
+}
+
+#attachmentbucket-sizer {
+  border-top: none;
+  border-bottom: none;
+}
+
+#compose-toolbar-sizer {
+  border-top-width: 1px;
+  border-left: none;
+  border-right: none;
+  -moz-border-top-colors: ThreeDHighlight;
+}
+
+#msgSubject {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+#MsgHeadersToolbar {
+  min-height: 0px; /* this undoes the min-height in toolbar.css */
+}
+
+/* ::::: autocomplete icons ::::: */
+
+treechildren::-moz-tree-cell-text(default-match) {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -moz-margin-start: 15px;
+  -moz-margin-end: -3px;
+  border: none;
+}
+
+treechildren::-moz-tree-image(local-abook) {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -moz-margin-start: 4px;
+  -moz-margin-end: -1px;
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/addrbook.gif");
+}
+
+treechildren::-moz-tree-image(remote-abook) {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -moz-margin-start: 2px;
+  -moz-margin-end: -3px;
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/remote-addrbook.gif");
+}
+
+treechildren::-moz-tree-image(remote-err) {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -moz-margin-start: 2px;
+  -moz-margin-end: -3px;
+  list-style-image: url("chrome://messenger/skin/addressbook/icons/remote-addrbook-error.gif");
+}
+
+/* ::::: lightweight themes ::::: */
+
+#MsgHeadersToolbar:-moz-lwtheme,
+#FormatToolbar:-moz-lwtheme,
+#compose-toolbar-sizer:-moz-lwtheme {
+  text-shadow: none;
+  color: -moz-dialogtext;
+  background-color: -moz-dialog;
+}
+
+#MsgHeadersToolbar textbox:-moz-lwtheme,
+#MsgHeadersToolbar menulist:-moz-lwtheme,
+.formatting-button > menulist:-moz-lwtheme {
+  opacity: 1;
+}

@@ -1,0 +1,14 @@
+
+/* Info box */
+#detailsDeck {
+  margin: 5px;
+}
+
+#infoBoxExpanderLabel {
+  -moz-padding-start: 2px;
+}
+
+#organizerScopeBar {
+  padding: 2px 0;
+  -moz-padding-end: 3px;
+}
