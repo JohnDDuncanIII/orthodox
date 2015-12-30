@@ -18,10 +18,17 @@ Changes made in version 0.1.2
 Screenshots
 -------------------------------
 ![navigator](screenshots/navigator.png)
+***
 ![add-ons](screenshots/add-ons_n.png)
+***
 ![incontent addons](screenshots/incontent_addons.png)
+***
 ![chatzilla](screenshots/classic_cz.png)
+***
 ![mail list](screenshots/mailnews_mail_list.png)
+***
 ![mail](screenshots/mailnews_mail.png)
+***
 ![news](screenshots/mailnews_news.png)
+***
 ![alert](screenshots/navigator_mailalert.png)
