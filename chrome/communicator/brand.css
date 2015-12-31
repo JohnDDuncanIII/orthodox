@@ -82,7 +82,6 @@
 
 #navigator-throbber[busy="true"] {
   list-style-image: url("chrome://communicator/skin/brand/throbber-anim.gif");
-
 }
 
 #navigator-throbber[busy] .button-image-icon {
