@@ -35,3 +35,5 @@ Screenshots
 ![news](screenshots/mailnews_news.png)
 ***
 ![alert](screenshots/navigator_mailalert.png)
+***
+![notification](screenshots/web-notifications.png)
