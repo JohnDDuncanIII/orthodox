@@ -93,8 +93,8 @@ tabpanels {
   background-color: rgba(0, 0, 0, 0.20);
 }
 
-.tabbrowser-tab[busy] {
-  list-style-image: url("chrome://global/skin/icons/loading_16.png");
+.tabbrowser-tab[busy] .tab-icon {
+  list-style-image: url("chrome://global/skin/icons/loading_16.gif");
 }
 
 .tabbrowser-tab[selected="true"] {

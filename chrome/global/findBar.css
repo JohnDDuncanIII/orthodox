@@ -9,6 +9,10 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+#FindToolbar {
+  border: none !important;
+}
+
 findbar {
   background: linear-gradient(#E8E8E8, #D0D0D0) repeat-x;
   border-top: 1px solid #888;

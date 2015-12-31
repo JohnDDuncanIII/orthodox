@@ -134,6 +134,9 @@ toolbar[mode="icons"] > *|* > .toolbarbutton-badge:-moz-locale-dir(rtl)::after {
   list-style-image: url("chrome://global/skin/arrow/arrow-dn.png");
   width: auto;
   padding: 0 5px;
+  /* match classic netscape dropmarker layout */
+  margin-left: -22px !important;
+  margin-top: -28px !important;
 }
 
 .toolbarbutton-menubutton-dropmarker[disabled="true"] {

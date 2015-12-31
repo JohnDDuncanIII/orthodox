@@ -120,6 +120,11 @@
   list-style-image: url("chrome://communicator/skin/taskbar/taskmenu-composer.png");
 }
 
+#mini-irc > .toolbarbutton-icon{
+  list-style-image: url("chrome://messenger/skin/icons/folder-newsgroup.png") !important;
+  margin-left: 2px !important;
+}
+
 /* ::::: component bar ::::: */
 
 #component-bar {
