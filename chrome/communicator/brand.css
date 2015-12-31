@@ -66,6 +66,10 @@
   border:none !important;
 }
 
+#navigator-throbber:active .button-image-icon {
+  list-style-image: url("chrome://communicator/skin/brand/throbber-single-pressed.png") !important;
+}
+
 #navigator-throbber:hover:active {
   -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow;
   -moz-border-right-colors: ThreeDDarkShadow ThreeDHighlight;
