@@ -14,6 +14,9 @@ Changes made in version 0.1.2
 * clean about:addons .css imported from the GNU/Linux version (OS X defaults are particularly ugly)
 * added retro error, exclaim, message, question, etc. graphics in global/icons
 * added light autoscroll as default. dark autoscroll also included (defaults to dark on OS X, looks bad, changed to light).
+* added support for web notifications in modern versions of seamonkey
+
+TODO: Some stuff is still OS X-specific (primarily navigator/{pageinfo/tabbrowser}.css)
 
 Screenshots
 -------------------------------
