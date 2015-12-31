@@ -17,6 +17,11 @@ tabpanels {
   -moz-appearance: none;
 }
 
+/* Remove white flashes */
+tabbrowser tabpanels, #appcontent > #content { 
+  background: #cecece !important; 
+}
+
 .tabs-bottom {
   border-bottom: 3px solid;
   -moz-border-bottom-colors: #888 rgba(0, 0, 0, 0.08);
