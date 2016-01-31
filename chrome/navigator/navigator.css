@@ -347,6 +347,8 @@ toolbar[mode="text"] > #window-controls > toolbarbutton > .toolbarbutton-icon {
 
 .popup-notification-icon[popupid="geolocation"] {
   list-style-image: url("chrome://communicator/skin/icons/geolocation-64.png");
+  width: 32px;
+  height: 32px;
 }
 
 .popup-notification-icon[popupid="web-notifications"] {
