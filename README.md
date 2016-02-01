@@ -37,3 +37,7 @@ Screenshots
 ![alert](screenshots/navigator_mailalert.png)
 ***
 ![notification](screenshots/web-notifications.png)
+***
+![addon](screenshots/add_on.png)
+***
+![geo](screenshots/geo.png)
