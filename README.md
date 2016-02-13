@@ -15,6 +15,8 @@ Changes made in version 0.1.2
 * added retro error, exclaim, message, question, etc. graphics in global/icons
 * added light autoscroll as default. dark autoscroll also included (defaults to dark on OS X, looks bad, changed to light).
 * added support for web notifications in modern versions of seamonkey
+* added retro icons for context menus/urlbar picon (warning, error, info, question)
+* Fixed mailnews reply icons for reply/forward + offline/normal/attachment emails
 
 TODO: Some stuff is still OS X-specific (primarily navigator/{pageinfo/tabbrowser}.css)
 
