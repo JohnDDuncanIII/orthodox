@@ -239,7 +239,8 @@
   list-style-image: url("chrome://mozapps/skin/extensions/category-recent.png");
 }
 #category-greasemonkey-user-script > .category-icon {
-  list-style-image: url("chrome://mozapps/skin/extensions/category-scripts.png") !important;
+  /*list-style-image: url("chrome://mozapps/skin/extensions/category-scripts.png") !important;*/
+    list-style-image: url("chrome://greasemonkey/skin/icon32.png") !important
 }
 
 
