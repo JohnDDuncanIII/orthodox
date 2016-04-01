@@ -14,12 +14,15 @@ toolbar {
   min-width: 1px;
   min-height: 20px;
   -moz-appearance: toolbar;
+  /*-moz-appearance: dialog;*/
 }
 
 menubar:-moz-lwtheme,
 toolbar:-moz-lwtheme {
   -moz-appearance: none;
   background: none;
+  /*-moz-appearance: dialog;
+  background-color: -moz-Dialog;*/
   border-color: transparent;
 }
 
