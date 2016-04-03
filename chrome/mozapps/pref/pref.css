@@ -1,0 +1,73 @@
+/*
+# -*- Mode: Java; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+# This Source Code Form is "Incompatible With Secondary Licenses", as
+# defined by the Mozilla Public License, v. 2.0.
+*/
+
+.listBox {
+  margin: 2px;
+  border: 1px inset #CCD0DD;
+  background-color: #FFFFFF;
+}
+
+.indent {
+  -moz-margin-start: 23px;
+  -moz-margin-end: 23px;
+}
+
+.small-indent {
+  -moz-margin-start: 15px;
+}
+
+.uniWidthButton {
+  min-width: 8em;
+}
+
+/** Privacy/Advanced Panels Expander Boxes **/
+.settingsBox {
+  margin: 2px;
+  padding: 2px;
+}
+
+#fileExtension {
+  width: 5em;
+}
+
+#fileExtension.pluginsList {
+  width: 5.5em;
+}
+
+#typeIcon,
+.extensionChildren::-moz-tree-image(fileExtension),
+.pluginTypesChildren::-moz-tree-image(fileExtension) {
+  margin: 0;
+  -moz-margin-end: 5px;
+}
+
+.pluginTypesChildren::-moz-tree-image(pluginEnabled) {
+  margin: 0;
+  -moz-margin-end: 5px;
+  list-style-image: url("chrome://mozapps/skin/pref/dot.gif");
+}
+
+.pluginTypesChildren::-moz-tree-image(pluginEnabled, enabled) {
+  margin: 0;
+  -moz-margin-end: 5px;
+  list-style-image: url("chrome://mozapps/skin/pref/check.gif");
+}
+
+.biggerIndent {
+  -moz-margin-start: 28px;
+}
+
+#typeField {
+  font-weight: bold;
+}
+
+#defaultAppName {
+  -moz-margin-start: 6px !important;
+}
