@@ -37,18 +37,16 @@
 /* Pick the desired icons depending on the window's context */
 
 #warningBox.private > #warningBoxIcon {
-  /*list-style-image: url("chrome://global/skin/icons/information-large.png");*/
-  list-style-image: url("chrome://global/skin/icons/alert-message_windows.gif"); 
-  width: 32px;
-  height: 32px;
+  list-style-image: url("chrome://global/skin/icons/information-large.png");
+  width: 48px;
+  height: 48px;
   -moz-margin-end: 1.5em;
 }
 
 #warningBox.normal > #warningBoxIcon {
-  /*list-style-image: url("chrome://global/skin/icons/question-large.png");*/
-  list-style-image: url("chrome://global/skin/icons/alert-question.gif");
-  width: 34px;
-  height: 32px;
+  list-style-image: url("chrome://global/skin/icons/question-large.png");
+  width: 48px;
+  height: 48px;
   -moz-margin-end: 1.5em;
 }
 
@@ -59,9 +57,9 @@
 }
 
 #trackWarnIcon {
-  list-style-image: url("chrome://communicator/skin/icons/warning.gif");
-  width: 32px;
-  height: 32px;
+  list-style-image: url("chrome://communicator/skin/icons/warning-24.png");
+  width: 24px;
+  height: 24px;
   -moz-margin-end: 1em;
 }
 
