@@ -82,13 +82,6 @@ toolbarbutton.bookmark-item[disabled="true"][container="true"] {
   list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-dis.png") !important;
 }
 
-/* Fix spacing between favicon and sitename in current seamonkey [2.34] bookmarks toolbar */
-.bookmark-item > .toolbarbutton-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 3px !important;
-}
-
 .bookmark-item > .toolbarbutton-menu-dropmarker {
   display: none;
 }

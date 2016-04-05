@@ -638,11 +638,12 @@ toolbar[mode="text"] #search-button > .button-box > .button-icon {
 /* ::::: personal toolbar ::::: */
 
 #bookmarks-button {
+  margin-top: -1px !important; /* Continue the system gradient on OS X -- due to height of image*/
   list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-button.png");
 }
 
 #bookmarks-button[open="true"] {
-  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-button.png");
+  list-style-image: url("chrome://communicator/skin/bookmarks/bookmark-folder-button-open.png");
 }
 
 toolbarbutton.chevron {
