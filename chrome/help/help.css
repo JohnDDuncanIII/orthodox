@@ -59,6 +59,14 @@
   -moz-image-region: inherit;
 }
 
+#help-back-button .toolbarbutton-text {
+  display: none !important;
+}
+
+#help-print-button .toolbarbutton-text {
+  display: none !important;
+}
+
 #help-back-button {
   -moz-image-region: rect(0 18px 20px 0);
   list-style-image: url("chrome://communicator/skin/icons/btn2.png");
