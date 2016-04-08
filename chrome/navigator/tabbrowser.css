@@ -133,6 +133,14 @@ tabbrowser tabpanels, #appcontent > #content {
   display: none;
 }
 
+.tabs-alltabs-button:hover:not([disabled="true"]) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tabs-alltabs-button:active:not([disabled="true"]) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 /* ::::: Tab scrollbox arrow ::::: */
 
 .scrollbutton-up,
@@ -146,22 +154,30 @@ tabbrowser tabpanels, #appcontent > #content {
 .scrollbutton-down:-moz-locale-dir(rtl) {
   border-right: 2px solid;
   -moz-border-right-colors: rgba(0, 0, 0, 0.19) transparent;
-  list-style-image: url("chrome://messenger/skin/icons/tab-arrow-left.png") !important;
-  -moz-image-region: rect(0, 7px, 11px, 0);
+  /*list-style-image: url("chrome://messenger/skin/icons/tab-arrow-left.png") !important;*/
+  list-style-image: url("chrome://global/skin/arrow/arrow-lft.gif");
+    box-shadow: 0 0 0 9px transparent inset;
+  transition: box-shadow 1s ease-out;
 }
 
 .scrollbutton-up[disabled="true"]:-moz-locale-dir(ltr),
 .scrollbutton-down[disabled="true"]:-moz-locale-dir(rtl) {
-  -moz-image-region: rect(0, 14px, 11px, 7px);
+  list-style-image: url("chrome://global/skin/arrow/arrow-lft-dis.gif");
   -moz-border-right-colors: transparent transparent;
+}
+
+.scrollbutton-down[disabled="true"]:-moz-locale-dir(ltr),
+.scrollbutton-up[disabled="true"]:-moz-locale-dir(rtl) {
+  list-style-image: url("chrome://global/skin/arrow/arrow-rit-dis.gif");
+  -moz-border-left-colors: transparent transparent;
 }
 
 .scrollbutton-down:-moz-locale-dir(ltr),
 .scrollbutton-up:-moz-locale-dir(rtl) {
   border-left: 2px solid;
   -moz-border-left-colors: rgba(0, 0, 0, 0.19) transparent;
-  list-style-image: url("chrome://messenger/skin/icons/tab-arrow-right.png") !important;
-  -moz-image-region: rect(0, 7px, 11px, 0);
+  /*list-style-image: url("chrome://messenger/skin/icons/tab-arrow-right.png") !important;*/
+  list-style-image: url("chrome://global/skin/arrow/arrow-rit.gif");
   box-shadow: 0 0 0 9px transparent inset;
   transition: box-shadow 1s ease-out;
 }
@@ -173,7 +189,6 @@ tabbrowser tabpanels, #appcontent > #content {
 
 .scrollbutton-down[disabled="true"]:-moz-locale-dir(ltr),
 .scrollbutton-up[disabled="true"]:-moz-locale-dir(rtl) {
-  -moz-image-region: rect(0, 14px, 11px, 7px);
   -moz-border-left-colors: transparent transparent;
 }
 
@@ -185,6 +200,14 @@ tabbrowser tabpanels, #appcontent > #content {
 .scrollbutton-up:hover:active:not([disabled="true"]),
 .scrollbutton-down:hover:active:not([disabled="true"]) {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*.tabs-alltabs-button {
+  margin: 2px 0px 1px;
+} */
+
+.tabs-alltabs-button > .toolbarbutton-icon {
+  margin: 0px !important;
 }
 
 /* All Tabs Menupopup */
@@ -223,6 +246,14 @@ tabbrowser tabpanels, #appcontent > #content {
   list-style-image: url("chrome://navigator/skin/icons/tab-new.gif") !important;
 }
 
+.tabs-newbutton:hover:not([disabled="true"]) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tabs-newbutton:active:not([disabled="true"]) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .tab-drop-indicator-bar {
   height: 11px;
   margin-top: -11px;
@@ -233,7 +264,6 @@ tabbrowser tabpanels, #appcontent > #content {
 .tab-drop-indicator {
   height: 11px;
   width: 11px;
-  margin-bottom: -5px;
   position: relative;
   list-style-image: url('chrome://navigator/skin/icons/tab-drag-indicator.gif') !important;
 }

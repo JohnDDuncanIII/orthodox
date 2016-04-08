@@ -49,6 +49,12 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+#button-search-container {
+  margin-top: -2px !important;
+}
+
+
+
 /* ::::: toolbar-primary ::::: */
 
 .toolbar-primary {

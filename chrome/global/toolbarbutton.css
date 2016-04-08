@@ -40,16 +40,17 @@ toolbarbutton[disabled="true"][open="true"] {
   -moz-appearance: none !important;
   border: none !important;
   background-color: transparent !important;
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn.png");
+  /*list-style-image: url("chrome://global/skin/arrow/arrow-dn.png");*/ /* MAC */
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
   padding: 0;
-  -moz-padding-start: 2px;
   width: auto;
 }
 
 .toolbarbutton-menu-dropmarker[disabled="true"] {
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.png");
+  /*list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.png");*/ /* MAC */
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
   padding: 0;
-  -moz-padding-start: 2px;
+  /*-moz-padding-start: 2px;*/
 }
 
 /* ::::: toolbarbutton menu-button ::::: */
