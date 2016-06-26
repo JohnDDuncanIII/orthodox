@@ -43,3 +43,5 @@ Screenshots
 ![addon](screenshots/add_on.png)
 ***
 ![geo](screenshots/geo.png)
+***
+![restore](screenshots/restore.png)

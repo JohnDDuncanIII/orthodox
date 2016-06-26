@@ -668,6 +668,11 @@ toolbar[mode="text"] toolbarbutton.chevron > .toolbarbutton-icon {
   display: -moz-box !important;
 }
 
+#PlacesToolbarItems .bookmark-item > .toolbarbutton-icon {
+  width: 16px;
+  height: 16px;
+}
+
 #PersonalToolbar[iconsize="small"] > toolbarpaletteitem > #home-button > .toolbarbutton-icon,
 #PersonalToolbar[iconsize="small"] > #home-button > .toolbarbutton-icon {
   width: 16px;
